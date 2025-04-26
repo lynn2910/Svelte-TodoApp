@@ -10,7 +10,7 @@ const config = {
             fallback: '404.html'
         }),
         paths: {
-            base: process.argv.includes('dev') ? '' : 'Svelte-TodoApp'
+            base: process.argv.includes('dev') ? '' : 'Svelte-TodoApp/'
         }
     },
     extensions: ['.svelte', '.svx']
