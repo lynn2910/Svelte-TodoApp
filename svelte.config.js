@@ -7,10 +7,21 @@ const config = {
     preprocess: [vitePreprocess(), mdsvex()],
     kit: {
         adapter: adapter({
-            fallback: '404.html'
+            fallback: '404.html',
+            precompress: false,
+            strict: true
         }),
         paths: {
             base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+        },
+        prerender: {
+            handleHttpError: ({ path, referrer, message }) => {
+                // Ignore 404 errors for data files when prerendering
+                if (path.endsWith('.json') && message.includes('404')) {
+                    return;
+                }
+                throw new Error(message);
+            }
         }
     },
     extensions: ['.svelte', '.svx']
