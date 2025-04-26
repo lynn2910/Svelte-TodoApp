@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import {base} from '$app/paths';
 	import {locales, setLocale, getLocale} from '$lib/paraglide/runtime'
 
 	let {children} = $props();
@@ -32,7 +33,7 @@
 </script>
 
 <nav class="w-1/4 min-w-96 mx-auto flex flex-row items-center justify-between mt-5 px-5 py-1 rounded-3xl border-2 border-gray-200">
-    <a href="/" class="text-lg font-bold select-none cursor-pointer">Todo</a>
+    <a href="{base}/" class="text-lg font-bold select-none cursor-pointer">Todo</a>
 
     <div class="my-auto">
         <button onclick={() => show_locales = !show_locales} aria-label="languages" class="my-auto">
