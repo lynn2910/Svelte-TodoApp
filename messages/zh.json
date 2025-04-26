@@ -1,4 +1,9 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from zh!"
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "hello_world": "Hello, {name} from zh!",
+  "title": "任务管理",
+  "add_input": {
+    "label": "添加任务：",
+    "placeholder": "新任务..."
+  }
 }

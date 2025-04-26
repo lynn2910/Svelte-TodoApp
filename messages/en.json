@@ -1,4 +1,9 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "hello_world": "Hello, {name} from en!",
+  "title": "Task management",
+  "add_input": {
+    "label": "Add a task:",
+    "placeholder": "New task..."
+  }
 }
