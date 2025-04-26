@@ -12,6 +12,8 @@
 		show_locales = false;
 	}
 
+	export const prerender = true;
+
 	// function handleClickOutside(event: MouseEvent) {
 	// 	const target = event.target as HTMLElement;
 	// 	if (!target.closest('.language-selector')) {
