@@ -11,7 +11,7 @@ const config = {
             pages: 'build'
         }),
         paths: {
-            base: process.argv.includes('dev') ? '' : process.env.BASE_PATH || '/Svelte-TodoApp'
+            base: process.argv.includes('dev') ? '' : '/Svelte-TodoApp'
         }
     },
     extensions: ['.svelte', '.svx']
