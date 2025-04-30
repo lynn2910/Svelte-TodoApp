@@ -7,10 +7,11 @@ const config = {
     preprocess: [vitePreprocess(), mdsvex()],
     kit: {
         adapter: adapter({
-            fallback: '404.html'
+            fallback: '404.html',
+            pages: 'build'
         }),
         paths: {
-            base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+            base: process.argv.includes('dev') ? '' : process.env.BASE_PATH || '/Svelte-TodoApp'
         }
     },
     extensions: ['.svelte', '.svx']
